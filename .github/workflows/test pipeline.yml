@@ -51,8 +51,9 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
+          username: phamvohaidang707@gmail.com
+          password: phamdang707
+          
           subject: GitHub Actions:${{ github.repository}}
           from: Project github
           body: test
