@@ -1,0 +1,74 @@
+name: CICD
+
+# sự kiện trigger khi có commit vào branch master
+on:
+  push:
+    branches:
+      - develop
+
+# các công việc cần thực hiện
+jobs: 
+  # build code reactjs
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+        
+  # test code reactjs bằng katalon
+  # test:
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
+  #     - name: Download production artifacts
+  #       uses: actions/download-artifact@v2
+  #       with:
+  #         name: build
+  #     - name: Install dependencies
+  #       run: npm install
+  #     - name: Run Katalon
+  #       run: |
+  #         wget -O katalon.tar.gz https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.tar.gz
+  #         tar -xvzf katalon.tar.gz
+  #         chmod +x katalon
+  #         ./katalon -noSplash -runMode=console -projectPath=./katalon-tests -testSuitePath="Test Suites/TS_ReactJS" -browserType="Chrome"
+
+  # test code reactjs 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Test
+        run: npm run test
+  
+  # deploy code reactjs 
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Download production artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+      - name: Deploy
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rsync
+          rsync -avz --delete build/ /var/www/html/
+  
+  
