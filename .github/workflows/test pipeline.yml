@@ -54,15 +54,6 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: GitHub Actions:${{ github.repository}}
-          body: |
-            Workflow Job: ${{ github.workflow }} - ${{ job.status }}
-            Repository: ${{ github.repository }}
-            Commit: ${{ github.sha }}
-            Author: ${{ github.actor }}
-            Message: ${{ github.event.head_commit.message }}
-            Branch: ${{ github.ref }}
-            Workflow: ${{ github.workflow }}
-            Job: ${{ job.name }}
-            Status: ${{ job.status }}
+          body: test
           to: |
             $(git log -1 --pretty=%ae)  # Email of the last committer
