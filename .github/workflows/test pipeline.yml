@@ -56,5 +56,4 @@ jobs:
           subject: GitHub Actions:${{ github.repository}}
           from: Project github
           body: test
-          to: |
-            $(git log -1 --pretty=%ae)  # Email of the last committer
+          to: 20120263@student.hcmus.edu.vn
