@@ -18,24 +18,23 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
     - name: Login to Docker Hub
           # Sử dụng action "docker/login-action" để đăng nhập vào Docker Hub
-        uses: docker/login-action@v2
-        with:
+      uses: docker/login-action@v2
+      with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-     - name: Build and test
+    - name: Build and test
         # Build và test image được build ra bằng Docker 
-        run: |
+      run: |
           docker build -t reactjs-basic .
           docker run reactjs-basic npm test
 
-      - name: Push image to Docker Hub
-        uses: docker/build-push-action@v2
+    - name: Push image to Docker Hub
+      uses: docker/build-push-action@v2
         # Sử dụng action "docker/build-push-action" để đẩy image lên Docker Hub
-        with:
+      with:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/reactjs-basic:${{ github.sha }}
