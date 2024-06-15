@@ -38,10 +38,8 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/reactjs-basic:${{ github.sha }}
-
-
 # job2: test 
-jobs:
+
   test:
     runs-on: ubuntu-latest
 
@@ -56,7 +54,7 @@ jobs:
       run: npm run test
 
 #jobs3: deploy
-jobs:
+
   deploy:
     runs-on: ubuntu-latest
 
@@ -69,7 +67,8 @@ jobs:
       with:
         name: build
 
-    - name: Deploy      run: |
+    - name: Deploy      
+      run: |
         sudo rm -rf /var/www/html/*
         sudo cp -r build/* /var/www/html/
 
