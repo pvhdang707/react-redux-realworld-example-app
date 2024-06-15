@@ -54,6 +54,7 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: GitHub Actions:${{ github.repository}}
+          from: Project github
           body: test
           to: |
             $(git log -1 --pretty=%ae)  # Email of the last committer
