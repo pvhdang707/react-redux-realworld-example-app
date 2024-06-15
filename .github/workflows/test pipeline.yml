@@ -45,3 +45,23 @@ jobs:
 
       - name: Run tests
         run: npm test
+      - name: Send email notification to contributors
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.example.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: GitHub Actions Job ${{ job.status }}: ${{ github.repository }}
+          body: |
+            Workflow Job: ${{ github.workflow }} - ${{ job.status }}
+            Repository: ${{ github.repository }}
+            Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
+            Message: ${{ github.event.head_commit.message }}
+            Branch: ${{ github.ref }}
+            Workflow: ${{ github.workflow }}
+            Job: ${{ job.name }}
+            Status: ${{ job.status }}
+          to: |
+            $(git log -1 --pretty=%ae)  # Email of the last committer
