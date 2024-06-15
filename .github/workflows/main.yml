@@ -4,71 +4,74 @@ name: CICD
 on:
   push:
     branches:
-      - develop
+      - main
+  pull_request:
+    branches:
+      - main
 
 # các công việc cần thực hiện
-jobs: 
-  # build code reactjs
+# job1: build code reactjs
+jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-        
-  # test code reactjs bằng katalon
-  # test:
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v2
-  #     - name: Download production artifacts
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: build
-  #     - name: Install dependencies
-  #       run: npm install
-  #     - name: Run Katalon
-  #       run: |
-  #         wget -O katalon.tar.gz https://download.katalon.com/7.9.1/Katalon_Studio_Linux_64-7.9.1.tar.gz
-  #         tar -xvzf katalon.tar.gz
-  #         chmod +x katalon
-  #         ./katalon -noSplash -runMode=console -projectPath=./katalon-tests -testSuitePath="Test Suites/TS_ReactJS" -browserType="Chrome"
 
-  # test code reactjs 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Login to Docker Hub
+          # Sử dụng action "docker/login-action" để đăng nhập vào Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+     - name: Build and test
+        # Build và test image được build ra bằng Docker 
+        run: |
+          docker build -t reactjs-basic .
+          docker run reactjs-basic npm test
+
+      - name: Push image to Docker Hub
+        uses: docker/build-push-action@v2
+        # Sử dụng action "docker/build-push-action" để đẩy image lên Docker Hub
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/reactjs-basic:${{ github.sha }}
+
+
+# job2: test 
+jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Test
-        run: npm run test
-  
-  # deploy code reactjs 
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Test
+      run: npm run test
+
+#jobs3: deploy
+jobs:
   deploy:
     runs-on: ubuntu-latest
-    needs: test
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Download production artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: build
-      - name: Deploy
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y rsync
-          rsync -avz --delete build/ /var/www/html/
-  
-  
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download production artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: build
+
+    - name: Deploy      run: |
+        sudo rm -rf /var/www/html/*
+        sudo cp -r build/* /var/www/html/
+
+
