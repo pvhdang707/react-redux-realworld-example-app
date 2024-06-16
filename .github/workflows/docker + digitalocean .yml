@@ -69,7 +69,7 @@ jobs:
 
     steps:
       - name: Deploy
-        uses: appleboy/ssh-action@v0.1.2
+        uses: Appleboy/ssh-action@master
         with:
           host: ${{secrets.SERVER_HOST}} # IP address of the server you wish to ssh into
           key: ${{secrets.SSH_PRIVATE_KEY}} # Private or public key of the server
