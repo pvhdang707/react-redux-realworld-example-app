@@ -48,6 +48,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:lastest${{ github.sha }}
   deploy:
+        needs: build_and_test
         runs-on: ubuntu-latest
 
         steps:
