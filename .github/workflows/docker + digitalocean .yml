@@ -76,10 +76,11 @@ jobs:
           username: ${{ secrets.SERVER_USER }} # User of the server you want to ssh into
      
           script: |
-            mkdir test 
-            cd test 
-            git clone git@github.com:pvhdang707/react-redux-realworld-example-app.git 
-            echo 'Deployment successful to digital ocean'  
+            script: |
+            docker stop demo-react-app || true
+            docker rm demo-react-app || true
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:latest
+            docker run -d --name demo-react-app -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:latest
  # # Job 2: Deploy
  #  deploy:
  #    needs: build_and_test
