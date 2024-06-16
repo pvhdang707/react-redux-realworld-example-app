@@ -47,18 +47,29 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:lastest${{ github.sha }}
-  deloy:
-        needs: build_and_test
+  deploy:
         runs-on: ubuntu-latest
+
         steps:
-          - name: SSH deploy
-            uses: appleboy/ssh-action@master
-            with:
-              host: ${{ secrets.SSH_HOST }}
-              username: ${{ secrets.SSH_USER }}
-              key: ${{ secrets.SSH_PRIVATE_KEY }}
-              script: |
-               ./deploy.sh# name: Docker CI/CD Pipeline
+            - uses: actions/checkout@v2
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "18"
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
+                  publish_branch: gh-pages
  # deloy
    # deloy:
    #   needs: build_and_test
