@@ -45,27 +45,59 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:lastest${{ github.sha }}
+ # deloy
+   # deloy:
+   #   needs: build_and_test
 
- # Job 2: Deploy
+   #   runs-on: ubuntu-latest
+
+   #   steps:
+   #     - name: Checkout files
+   #       uses: actions/checkout@v2
+
+   #     - name: Get tag name
+   #       uses: olegtarasov/get-tag@v2
+
+   #     - name: Install doctl
+   #       uses: digitalocean/action-doctl@v2
+   #       with: 
+   #         token: ${{ secret.DIGITALOCEAN_ACCESS_TOKEN}}
+
   deploy:
-    needs: build_and_test
     runs-on: ubuntu-latest
-
     steps:
-      - name: Deploy to server
-       # Sử dụng action "appleboy/ssh-action" để triển khai image lên server thông qua SSH
-        uses: appleboy/ssh-action@v0.1.3
+      - name: Deploy
+        uses: appleboy/ssh-action@v0.1.2
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{secrets.SERVER_HOST}} # IP address of the server you wish to ssh into
+          key: ${{secrets.SSH_PRIVATE_KEY}} # Private or public key of the server
+          username: ${{ secrets.SERVER_USER }} # User of the server you want to ssh into
+     
           script: |
-            # Pull image mà được push lên DockerHub bên trên
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:${{ github.sha }}
+            mkdir test 
+            cd test 
+            git clone git@github.com:pvhdang707/react-redux-realworld-example-app.git 
+            echo 'Deployment successful to digital ocean'  
+ # # Job 2: Deploy
+ #  deploy:
+ #    needs: build_and_test
+ #    runs-on: ubuntu-latest
 
-            # Dừng và gỡ bỏ container hiện tại (nếu có)
-            docker stop reactjs-container
-            docker rm reactjs-container 
+ #    steps:
+ #      - name: Deploy to server
+ #       # Sử dụng action "appleboy/ssh-action" để triển khai image lên server thông qua SSH
+ #        uses: appleboy/ssh-action@v0.1.3
+ #        with:
+ #          host: ${{ secrets.SERVER_HOST }}
+ #          username: ${{ secrets.SERVER_USER }}
+ #          key: ${{ secrets.SSH_PRIVATE_KEY }}
+ #          script: |
+ #            # Pull image mà được push lên DockerHub bên trên
+ #            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:${{ github.sha }}
 
-            # Chạy container mới với image đã pull về bên trên
-            docker run -d -p 80:3000 --name reactjs-container ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:${{ github.sha }}
+ #            # Dừng và gỡ bỏ container hiện tại (nếu có)
+ #            docker stop reactjs-container
+ #            docker rm reactjs-container 
+
+ #            # Chạy container mới với image đã pull về bên trên
+ #            docker run -d -p 80:3000 --name reactjs-container ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:${{ github.sha }}
