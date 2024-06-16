@@ -64,7 +64,9 @@ jobs:
    #         token: ${{ secret.DIGITALOCEAN_ACCESS_TOKEN}}
 
   deploy:
+    needs: build_and_test
     runs-on: ubuntu-latest
+
     steps:
       - name: Deploy
         uses: appleboy/ssh-action@v0.1.2
