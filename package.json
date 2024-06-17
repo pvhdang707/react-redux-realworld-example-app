@@ -2,6 +2,7 @@
   "name": "react-redux-realworld-example-app",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://pvhdang707.github.io/react-redux-realworld-example-app/",
   "devDependencies": {
     "cross-env": "^5.1.4",
     "gh-pages": "^6.1.1",
