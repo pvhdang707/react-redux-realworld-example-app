@@ -75,7 +75,7 @@ jobs:
               with:
                   version: '7.5.5'
                   projectPath: '${{ github.workspace }}'
-                  args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite" -apiKey="" --config -webui.autoUpdateDrivers=true -sendMail=<20120263@student.hcmus.edu.vn>'
+                  args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite" -browserType=“Chrome” -apiKey="" --config -webui.autoUpdateDrivers=true'
      # deloy
    # deloy:
    #   needs: build_and_test
