@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_sit</name>
+   <tag></tag>
+   <elementGuidId>42a15087-cb47-4aba-a5e3-3b082cfb08f8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.tag-default.tag-pill.tag-outline</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/a/ul/li</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth! Aut facilis qui. Cupiditate sit ratione eum sunt rerum impedit. Qui suscipit debitis et et voluptates voluptatem voluptatibus. Quas voluptatum quae corporis corporis possimus. Read more... sit reiciendis consequuntur nihil&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>c42a093d-8081-4a1a-9a0f-3813434ff9ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tag-default tag-pill tag-outline</value>
+      <webElementGuid>7b356ad3-24a7-4051-a268-c2cb2137c054</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>sit</value>
+      <webElementGuid>190bd95f-ef0f-4891-a0fe-5eea2701e25e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[1]/div[@class=&quot;home-page&quot;]/div[@class=&quot;container page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-9&quot;]/div[2]/div[@class=&quot;article-preview&quot;]/a[@class=&quot;preview-link&quot;]/ul[@class=&quot;tag-list&quot;]/li[@class=&quot;tag-default tag-pill tag-outline&quot;]</value>
+      <webElementGuid>842306ea-e4fa-4b48-827d-2bb4dfa274ce</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/a/ul/li</value>
+      <webElementGuid>9065ed10-81bc-4c26-a548-a9bf9d166ec2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Read more...'])[1]/following::li[1]</value>
+      <webElementGuid>3ef53822-ed21-40cc-a7f6-092ada1ce964</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth!'])[1]/following::li[1]</value>
+      <webElementGuid>af0c4716-34e3-4218-8355-dfadf00fa20f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='reiciendis'])[1]/preceding::li[1]</value>
+      <webElementGuid>724a28b2-0a90-46cf-b728-a3aa42b81d62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='consequuntur'])[1]/preceding::li[2]</value>
+      <webElementGuid>7c928e98-bbbb-4b89-a7f6-1a43587397f6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='sit']/parent::*</value>
+      <webElementGuid>e8858e9b-21ee-4e9b-bbbb-50dfd4483d7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/ul/li</value>
+      <webElementGuid>dddfc90a-2ab6-43dd-bf2f-a7574f83329f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'sit' or . = 'sit')]</value>
+      <webElementGuid>815a6057-dc0f-4ced-9687-9189eb1d1fea</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

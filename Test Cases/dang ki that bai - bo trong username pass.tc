@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>dang ki that bai - bo trong username pass</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7d12e823-87c3-44aa-bf17-f9e1bb827758</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>12c26ac8-c48c-4874-bac2-cb2be432a66a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>12c26ac8-c48c-4874-bac2-cb2be432a66a</id>
+      <masked>false</masked>
+      <name>mail</name>
+   </variable>
+</TestCaseEntity>

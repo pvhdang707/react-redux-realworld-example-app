@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>bo trong email</description>
+   <name>dang nhap that bai - bo trong email</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9103475c-1a2f-4f29-ad85-192ad0f5089e</testCaseGuid>
+</TestCaseEntity>

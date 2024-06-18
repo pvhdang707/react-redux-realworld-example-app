@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tcn - edit profile</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d4eb8841-dc4d-4088-b0c1-678e51b8b8fa</testCaseGuid>
+</TestCaseEntity>
