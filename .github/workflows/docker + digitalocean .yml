@@ -76,9 +76,7 @@ jobs:
         - name: Unzip ChromeDriver
           run: |
               unzip chromedriver.zip
-        - name: Replace existing ChromeDriver
-          run: |
-            move chromedriver.exe "C:\Users\runneradmin\.katalon\7.5.5\Katalon_Studio_Engine_Windows_64-7.5.5\configuration\resources\drivers"
+        
         - name: Katalon Studio Github Action
           uses: katalon-studio/katalon-studio-github-action@v3.0
           with:
