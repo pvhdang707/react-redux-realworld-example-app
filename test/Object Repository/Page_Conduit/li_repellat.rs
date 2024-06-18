@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_repellat</name>
+   <tag></tag>
+   <elementGuidId>e55089ef-1a25-4505-8b4f-9a3071ca67d5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.tag-default.tag-pill.tag-outline</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/a/ul/li</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;We need to quantify the primary TCP matrix! Assumenda molestiae laboriosam enim ipsum quaerat enim officia vel quo. Earum odit rem natus totam atque cumque. Sint dolorem facere non. Read more... repellat nostrum excepturi quaerat&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>a37b37de-4374-46ce-9b2b-05ad029046f4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tag-default tag-pill tag-outline</value>
+      <webElementGuid>c14487c7-942f-4097-8da2-f14c9a0ac9cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>repellat</value>
+      <webElementGuid>a53c09c4-0ba0-471f-82e2-e115d4990b05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[1]/div[@class=&quot;home-page&quot;]/div[@class=&quot;container page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-9&quot;]/div[2]/div[@class=&quot;article-preview&quot;]/a[@class=&quot;preview-link&quot;]/ul[@class=&quot;tag-list&quot;]/li[@class=&quot;tag-default tag-pill tag-outline&quot;]</value>
+      <webElementGuid>8296c9fa-4c4f-4c93-8993-064278bbb561</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/a/ul/li</value>
+      <webElementGuid>e3d8ecca-b7f2-482f-b511-9f1bb0900332</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Read more...'])[1]/following::li[1]</value>
+      <webElementGuid>21876eec-308c-4de6-82c6-91f7362ab36e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='We need to quantify the primary TCP matrix!'])[1]/following::li[1]</value>
+      <webElementGuid>7b647d60-48c2-4685-9a90-c756faa9635b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='nostrum'])[1]/preceding::li[1]</value>
+      <webElementGuid>1dad10fc-1179-4c76-8da2-48cc435b0a66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='excepturi'])[1]/preceding::li[2]</value>
+      <webElementGuid>d25cf154-1a52-4fb0-865f-d51feae71055</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/ul/li</value>
+      <webElementGuid>a1afc6cc-5fba-41ee-8045-bb91a27ced58</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'repellat' or . = 'repellat')]</value>
+      <webElementGuid>55d30f50-8209-405d-8634-8bd1b6509c87</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Tenetur doloremque at fuga eligendi molli_e408ba</name>
+   <tag></tag>
+   <elementGuidId>57688f02-fd70-4c8c-a054-585ec9661ca3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[3]/div/div/div[4]/div/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Tenetur doloremque at fuga eligendi mollitia modi placeat. Dolores corrupti repe&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>391ce549-5d05-438b-a5f8-65a3fbb25e58</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>card-text</value>
+      <webElementGuid>5c82bd8d-4e99-437d-a22e-c00a5f7a69fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tenetur doloremque at fuga eligendi mollitia modi placeat. Dolores corrupti repellendus et quos eos modi sunt. Quae non molestiae earum iusto magni. Molestiae quo fugit quisquam sed. Quia culpa rem minus distinctio.</value>
+      <webElementGuid>99fe3382-6ac0-4471-8824-4f6db9208a16</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[1]/div[@class=&quot;article-page&quot;]/div[@class=&quot;container page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-12 col-md-8 offset-md-2&quot;]/div[1]/div[@class=&quot;card&quot;]/div[@class=&quot;card-block&quot;]/p[@class=&quot;card-text&quot;]</value>
+      <webElementGuid>c644245f-6af6-41b1-8b04-46cb13b8eeb1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[3]/div/div/div[4]/div/p</value>
+      <webElementGuid>ae4d0f64-76e5-4668-9524-ce2654429c77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thu Jan 04 2024'])[4]/following::p[1]</value>
+      <webElementGuid>e0f0842b-49c1-423d-b0cc-62af38acfa0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Maksim Esteban'])[1]/following::p[1]</value>
+      <webElementGuid>0a66b379-4d6e-4645-a027-bb2b76843131</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Yasuo Mohamed'])[1]/preceding::p[1]</value>
+      <webElementGuid>3310b563-bae8-47a7-b2f4-8c933ada04c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thu Jan 04 2024'])[5]/preceding::p[1]</value>
+      <webElementGuid>7c768b8b-1c28-49fd-b9e3-86db553c29d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Tenetur doloremque at fuga eligendi mollitia modi placeat. Dolores corrupti repellendus et quos eos modi sunt. Quae non molestiae earum iusto magni. Molestiae quo fugit quisquam sed. Quia culpa rem minus distinctio.']/parent::*</value>
+      <webElementGuid>88e57722-1bc9-404c-90a1-6574fa5e5150</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/p</value>
+      <webElementGuid>c3656327-660f-465a-9452-734b4982e131</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Tenetur doloremque at fuga eligendi mollitia modi placeat. Dolores corrupti repellendus et quos eos modi sunt. Quae non molestiae earum iusto magni. Molestiae quo fugit quisquam sed. Quia culpa rem minus distinctio.' or . = 'Tenetur doloremque at fuga eligendi mollitia modi placeat. Dolores corrupti repellendus et quos eos modi sunt. Quae non molestiae earum iusto magni. Molestiae quo fugit quisquam sed. Quia culpa rem minus distinctio.')]</value>
+      <webElementGuid>18c95bad-2d17-4197-8680-ff11e8eab4a2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -35,7 +35,7 @@ const GlobalFeedTab = props => {
         href=""
         className={ props.tab === 'all' ? 'nav-link active' : 'nav-link' }
         onClick={clickHandler}>
-        abc Feed
+        Global Feed
       </a>
     </li>
   );

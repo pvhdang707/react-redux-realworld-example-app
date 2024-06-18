@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Maksim Esteban</name>
+   <tag></tag>
+   <elementGuidId>ed504dab-b9c0-4595-a9b2-a9b8f9c55aa2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div/div/div[2]/div[2]/div/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Maksim EstebanThu Jan 04 2024 270$/ >> internal:role=link >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>f1c78e8c-c3af-4eab-9797-cb5284d0a949</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>author</value>
+      <webElementGuid>9483614e-c554-4b19-9171-f77ceef4ddc9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/@Maksim Esteban</value>
+      <webElementGuid>0b287054-9ac3-4fd5-83fd-98d01d590303</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Maksim Esteban</value>
+      <webElementGuid>ef244437-864e-4c2b-a710-57a962812b9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[1]/div[@class=&quot;home-page&quot;]/div[@class=&quot;container page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-9&quot;]/div[2]/div[@class=&quot;article-preview&quot;]/div[@class=&quot;article-meta&quot;]/div[@class=&quot;info&quot;]/a[@class=&quot;author&quot;]</value>
+      <webElementGuid>cde0a839-db59-4525-804b-1cb86cce1308</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div/div/div[2]/div[2]/div/div/a</value>
+      <webElementGuid>702ca709-7b92-417b-b106-aac8bc85326c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'Maksim Esteban')])[2]</value>
+      <webElementGuid>85f4d8bf-f325-4506-a592-0e6f357a1565</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='nihil'])[1]/following::a[2]</value>
+      <webElementGuid>62b8c026-1430-4eb4-801a-55ea28e91da5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='consequuntur'])[1]/following::a[2]</value>
+      <webElementGuid>1798f44f-382e-486a-9c15-8eed0cc96116</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thu Jan 04 2024'])[2]/preceding::a[1]</value>
+      <webElementGuid>7242a971-ce6e-42c6-a7d0-34ab17366157</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='quantifying the circuit wont do anything, we need to parse the back-end FTP interface!'])[1]/preceding::a[1]</value>
+      <webElementGuid>0173e178-f6b7-4229-9f21-4a9747f0e916</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/@Maksim Esteban')])[4]</value>
+      <webElementGuid>671caffe-36f3-4230-ae3e-680dcff54fed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div/a</value>
+      <webElementGuid>2abdd195-0ce6-4fd0-b901-811be307972e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/@Maksim Esteban' and (text() = 'Maksim Esteban' or . = 'Maksim Esteban')]</value>
+      <webElementGuid>54707e25-aee1-45e8-a9d7-dbbd85286cdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div/div/div[2]/div[10]/div/div/a</value>
+      <webElementGuid>00de7dfd-ec0c-4e2a-801f-637d6ac5eee0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>(//a[contains(text(),'Maksim Esteban')])[10]</value>
+      <webElementGuid>582459d5-9aca-4ae5-a929-ecdfb20f2930</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='blanditiis'])[1]/following::a[2]</value>
+      <webElementGuid>45bd46e0-81c0-407d-a0c8-7c521949a957</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='et'])[1]/following::a[2]</value>
+      <webElementGuid>7e602731-f76b-4251-becb-f2459b2170b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thu Jan 04 2024'])[10]/preceding::a[1]</value>
+      <webElementGuid>e5013c16-132b-4194-bdfd-03af0db0708e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Use the open-source THX application, then you can quantify the solid state transmitter!'])[1]/preceding::a[1]</value>
+      <webElementGuid>4f8f45f4-5d89-4d4a-bfc3-2f26de35370f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/@Maksim Esteban')])[20]</value>
+      <webElementGuid>eb1350b3-55f5-4981-8db6-6e55ef2fdb2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[10]/div/div/a</value>
+      <webElementGuid>cb757514-84da-4b0a-ad27-880f326d558f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/div/div/a</value>
+      <webElementGuid>87f670b2-e5f2-4cdc-ad02-29c7d60e87fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Maksim Esteban')]</value>
+      <webElementGuid>e5d4d664-a8e1-4235-83cd-dc72a783fc2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='abc Feed'])[1]/following::a[2]</value>
+      <webElementGuid>b4fca574-ad45-414c-99b6-93f14424f323</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='conduit'])[2]/following::a[3]</value>
+      <webElementGuid>91e0cc1b-278e-4a76-b1f8-3b797f4480ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Thu Jan 04 2024'])[1]/preceding::a[1]</value>
+      <webElementGuid>22eee3dc-20c4-41e2-a65f-d1b07e10853b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth!'])[1]/preceding::a[1]</value>
+      <webElementGuid>2a8a20f6-9b18-4858-bafe-fa5c73f0fe5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Maksim Esteban']/parent::*</value>
+      <webElementGuid>a2f2954d-feb3-4233-b7dc-fae6560179aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/@Maksim Esteban')])[2]</value>
+      <webElementGuid>8be1aed8-6095-4940-8980-590cdee9f598</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/a</value>
+      <webElementGuid>0b7af4f8-6f2e-4170-8ba7-f3c6f62ca85a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div/div/div[2]/div/div/div/a</value>
+      <webElementGuid>2df60fce-5e0f-4923-9adb-18b4d259f95f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Your Feed'])[1]/following::a[3]</value>
+      <webElementGuid>b0614070-2a70-45ca-aaf7-e3d785dcd3d7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

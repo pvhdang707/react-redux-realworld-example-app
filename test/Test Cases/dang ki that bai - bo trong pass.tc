@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>dang ki that bai - bo trong pass</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d4ec17a-6c66-498a-8064-8df12d3d9f52</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7f295f7d-798e-40ff-a22c-9ff44f9b6e3d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6cd71133-cdb4-4323-ac4c-71fb386e835d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7f295f7d-798e-40ff-a22c-9ff44f9b6e3d</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6cd71133-cdb4-4323-ac4c-71fb386e835d</id>
+      <masked>false</masked>
+      <name>mail</name>
+   </variable>
+</TestCaseEntity>

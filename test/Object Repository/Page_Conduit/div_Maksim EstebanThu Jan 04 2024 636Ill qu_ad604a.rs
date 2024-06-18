@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Maksim EstebanThu Jan 04 2024 636Ill qu_ad604a</name>
+   <tag></tag>
+   <elementGuidId>7d720151-5196-4751-8b73-67b9a31dfba7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.article-preview</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Maksim EstebanThu Jan 04 2024 636Ill quantify the redundant TCP bus, that should&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a6126d03-b6c1-4041-b6a3-245fed044fd1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>article-preview</value>
+      <webElementGuid>5858330f-2dcb-407b-961d-08d62a3a2640</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Maksim EstebanThu Jan 04 2024 636Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth!Aut facilis qui. Cupiditate sit ratione eum sunt rerum impedit. Qui suscipit debitis et et voluptates voluptatem voluptatibus. Quas voluptatum quae corporis corporis possimus.Read more...sitreiciendisconsequunturnihil</value>
+      <webElementGuid>a2af0677-c1c2-457c-aeaa-3f3660486ba5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[1]/div[@class=&quot;home-page&quot;]/div[@class=&quot;container page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-9&quot;]/div[2]/div[@class=&quot;article-preview&quot;]</value>
+      <webElementGuid>326d7ec0-c451-4a53-b4a6-284c761eeb89</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div</value>
+      <webElementGuid>b5a8a780-2916-4c1a-8eef-6e70a3fa488c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='abc Feed'])[1]/following::div[2]</value>
+      <webElementGuid>2613d0f2-bba9-4f98-926d-74296bc083b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='conduit'])[2]/following::div[6]</value>
+      <webElementGuid>213222c7-06c4-4c8b-a5f6-faf6055c47f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div</value>
+      <webElementGuid>d57a8bd8-283a-45fd-a39f-aabf86e2f5d2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Maksim EstebanThu Jan 04 2024 636Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth!Aut facilis qui. Cupiditate sit ratione eum sunt rerum impedit. Qui suscipit debitis et et voluptates voluptatem voluptatibus. Quas voluptatum quae corporis corporis possimus.Read more...sitreiciendisconsequunturnihil' or . = 'Maksim EstebanThu Jan 04 2024 636Ill quantify the redundant TCP bus, that should hard drive the ADP bandwidth!Aut facilis qui. Cupiditate sit ratione eum sunt rerum impedit. Qui suscipit debitis et et voluptates voluptatem voluptatibus. Quas voluptatum quae corporis corporis possimus.Read more...sitreiciendisconsequunturnihil')]</value>
+      <webElementGuid>bd1c861a-49ce-424b-aaca-80015d99cdab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

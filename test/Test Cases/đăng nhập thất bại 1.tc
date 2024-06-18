@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>bỏ trống 2 label</description>
+   <name>đăng nhập thất bại 1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>24b6c7b9-83e4-479e-95bb-41fcb31e40d3</testCaseGuid>
+</TestCaseEntity>

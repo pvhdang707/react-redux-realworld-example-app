@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>loc feed theo tag est</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48a8fe6a-e8aa-4a83-a779-484084a94572</testCaseGuid>
+</TestCaseEntity>

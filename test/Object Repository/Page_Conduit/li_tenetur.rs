@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>li_tenetur</name>
+   <tag></tag>
+   <elementGuidId>9720a4af-251a-4bd8-aaf5-69befbbe521d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.tag-default.tag-pill.tag-outline</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/a/ul/li</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=link[name=&quot;Ill override the digital ADP alarm, that should microchip the USB firewall! Rerum enim tenetur maiores ullam et id assumenda est magnam. At praesentium molestias culpa fugiat et ipsum velit est et. Non velit ipsum quas laudantium accusantium sed qui id. Eum deserunt ratione veniam. Read more... tenetur quasi eos possimus&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>93e7e320-0192-40c8-b686-663bbd2c47d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>tag-default tag-pill tag-outline</value>
+      <webElementGuid>c14bab39-21ad-48e5-816d-017ffe5dad9a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>tenetur</value>
+      <webElementGuid>ce07969d-28db-409a-85e1-bbfa59860f17</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[1]/div[@class=&quot;home-page&quot;]/div[@class=&quot;container page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-9&quot;]/div[2]/div[@class=&quot;article-preview&quot;]/a[@class=&quot;preview-link&quot;]/ul[@class=&quot;tag-list&quot;]/li[@class=&quot;tag-default tag-pill tag-outline&quot;]</value>
+      <webElementGuid>cb4fa396-3b1b-4c6d-b578-ec4b27079b95</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/div/a/ul/li</value>
+      <webElementGuid>e7907a5d-65ac-4e86-945c-51f3a2d86799</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Read more...'])[1]/following::li[1]</value>
+      <webElementGuid>c8aa3487-18bb-4061-99c2-8bcc5d2d9bd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ill override the digital ADP alarm, that should microchip the USB firewall!'])[1]/following::li[1]</value>
+      <webElementGuid>6ed44ec2-5f5b-4d6d-af62-9419ef64695d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='quasi'])[1]/preceding::li[1]</value>
+      <webElementGuid>ae325b63-a1c9-4a1c-8b8d-acd39b1a2829</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='eos'])[1]/preceding::li[2]</value>
+      <webElementGuid>1c132f17-65c8-4ce0-9be5-36f424efb995</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/ul/li</value>
+      <webElementGuid>db096a0a-7f06-4cae-b43c-c5eb17cf7ac3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = 'tenetur' or . = 'tenetur')]</value>
+      <webElementGuid>29bf29fc-68a0-4836-9795-8c377dc2641e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
