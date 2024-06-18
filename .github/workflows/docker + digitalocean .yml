@@ -22,73 +22,80 @@ permissions:
 jobs:
    # Job 1: build và test
    # Job thực thi trên máy ảo ubuntu
-  # build_and_test:
-  #   runs-on: ubuntu-latest
+  build_and_test:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout code
-  #       # Sử dụng action "checkout" để sao copy code từ repository vào máy ảo Ubuntu
-  #       uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        # Sử dụng action "checkout" để sao copy code từ repository vào máy ảo Ubuntu
+        uses: actions/checkout@v2
 
-  #     - name: Login to Docker Hub
-  #         # Sử dụng action "docker/login-action" để đăng nhập vào Docker Hub
-  #       uses: docker/login-action@v2
-  #       with:
-  #         username: ${{ secrets.DOCKERHUB_USERNAME }}
-  #         password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login to Docker Hub
+          # Sử dụng action "docker/login-action" để đăng nhập vào Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-  #     - name: Build and test
-  #       # Build và test image được build ra bằng Docker 
-  #       run: |
-  #         docker build -t demo-react-app .
-  #         docker run demo-react-app npm run build
-  #     - name: Push image to Docker Hub
-  #       uses: docker/build-push-action@v2
-  #       # Sử dụng action "docker/build-push-action" để đẩy image lên Docker Hub
-  #       with:
-  #         context: .
-  #         push: true
-  #         tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:lastest${{ github.sha }}
-  # deploy:
-  #       needs: build_and_test
-  #       runs-on: ubuntu-latest
+      - name: Build and test
+        # Build và test image được build ra bằng Docker 
+        run: |
+          docker build -t demo-react-app .
+          docker run demo-react-app npm run build
+      - name: Push image to Docker Hub
+        uses: docker/build-push-action@v2
+        # Sử dụng action "docker/build-push-action" để đẩy image lên Docker Hub
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo-react-app:lastest${{ github.sha }}
+  deploy:
+        needs: build_and_test
+        runs-on: ubuntu-latest
 
-  #       steps:
-  #           - uses: actions/checkout@v2
+        steps:
+            - uses: actions/checkout@v2
 
             
 
-  #           - name: Deploy
-  #             uses: peaceiris/actions-gh-pages@v3
-  #             with:
-  #                 github_token: ${{ secrets.GITHUB_TOKEN }}
-  #                 publish_dir: ./dist
-  #                 publish_branch: gh-pages
-  test:
-        # needs: deploy
-        runs-on: windows-latest
-        steps:
-        - name: Checkout
-          uses: actions/checkout@v2
-        - name: Download ChromeDriver
-          run: |
-              curl -L https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/win32/chromedriver-win32.zip -o chromedriver.zip
-        - name: Unzip ChromeDriver
-          run: |
-              unzip chromedriver.zip
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
+                  publish_branch: gh-pages
+  # test:
+  #       # needs: deploy
+  #       runs-on: windows-latest
+  #       steps:
+  #       - name: Checkout
+  #         uses: actions/checkout@v2
+  #       # - name: Download ChromeDriver
+  #       #   run: |
+  #       #       curl -L https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/win32/chromedriver-win32.zip -o chromedriver.zip
+  #       # - name: Unzip ChromeDriver
+  #       #   run: |
+  #       #       unzip chromedriver.zip
         
-        - name: Katalon Studio Github Action
-          uses: katalon-studio/katalon-studio-github-action@v3.0
-          with:
-              version: '7.5.5'
-              projectPath: ${{ github.workspace }}/test
-              args: '-retry=0 -testSuitePath="Test Suites/New Test Suite" -apiKey="b882ef65-7d47-4f1e-b0ab-1cba4ba478f3" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true'
-        - name: Upload Reports
-          if: always()
-          uses: actions/upload-artifact@v4
-          with:
-            name: Katalon Reports
-            path: ${{ github.workspace }}/Reports/**/*
+  #       - name: Katalon Studio Github Action
+  #         uses: katalon-studio/katalon-studio-github-action@v3.0
+  #         with:
+  #             version: '9.5.0'
+  #             projectPath: ${{ github.workspace }}/test
+  #             args: '-retry=0 -testSuitePath="Test Suites/New Test Suite" -apiKey="b882ef65-7d47-4f1e-b0ab-1cba4ba478f3" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true'
+  #       - name: Upload Reports
+  #         if: always()
+  #         uses: actions/upload-artifact@v4
+  #         with:
+  #           name: Katalon Reports
+  #           path: ${{ github.workspace }}/Reports/**/*
+
+
+
+
+
+
+            
      #    runs-on: ubuntu-latest
      #    steps:
      #    - name: Checkout

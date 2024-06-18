@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>89abdf52-691a-43a9-b29b-a2757a9d211c</dataFileGUID>
-   <dataSourceUrl>/Data Files/TestDt.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/TestDt.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <properties>
@@ -21,4 +21,3 @@
    <sheetName>SingUp</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
-test/Data Files/TestDt.xlsx
