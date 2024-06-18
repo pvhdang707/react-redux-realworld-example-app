@@ -1,5 +1,4 @@
-name: Docker CI/CD Pipeline
-
+name: mini test
 # Xác định sự kiện trigger cho pipeline, trong trường hợp này là push lên nhánh develop
 on:
   push:
