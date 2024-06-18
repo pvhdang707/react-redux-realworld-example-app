@@ -81,7 +81,7 @@ jobs:
           with:
               version: '9.5.0'
               projectPath: ${{ github.workspace }}/test
-              args: ' -retry=0 -testSuitePath="Test Suites/mini" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -sendMail="20120263@student.hcmus.edu.vn" '
+              args: ' -retry=0 -testSuitePath="Test Suites/mini" -apiKey="b882ef65-7d47-4f1e-b0ab-1cba4ba478f3" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -sendMail="20120263@student.hcmus.edu.vn" '
   notify_slack:
        needs: test
        runs-on: ubuntu-latest
