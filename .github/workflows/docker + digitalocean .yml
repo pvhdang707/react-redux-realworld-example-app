@@ -65,7 +65,7 @@ jobs:
                   publish_dir: ./dist
                   publish_branch: gh-pages
   test:
-        needs: deloy
+        needs: deploy
         runs-on: windows-latest
         steps:
             - name: Checkout
