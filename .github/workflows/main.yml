@@ -69,21 +69,23 @@ jobs:
         steps:
         - name: Checkout
           uses: actions/checkout@v2
-        # - name: Download ChromeDriver
-        #   run: |
-        #       curl -L https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/win32/chromedriver-win32.zip -o chromedriver.zip
-        # - name: Unzip ChromeDriver
-        #   run: |
-        #       unzip chromedriver.zip
+        - name: Download ChromeDriver
+          run: |
+              curl -L https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/win32/chromedriver-win32.zip -o chromedriver.zip
+        - name: Unzip ChromeDriver
+          run: |
+              unzip chromedriver.zip
         
         - name: Katalon Studio Github Action
           uses: katalon-studio/katalon-studio-github-action@v3.0
           with:
               version: '9.5.0'
               projectPath: ${{ github.workspace }}/test
-              args: ' -retry=0 -testSuitePath="Test Suites/mini" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -sendMail=<20120263@student.hcmus.edu.vn> '
+              args: ' -retry=0 -testSuitePath="Test Suites/mini" -apiKey="b882ef65-7d47-4f1e-b0ab-1cba4ba478f3" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -sendMail="20120263@student.hcmus.edu.vn" '
   notify_slack:
-       needs: test
+       needs: deploy
+       if: always()
+
        runs-on: ubuntu-latest
        steps:
        - name: Send Slack notification
