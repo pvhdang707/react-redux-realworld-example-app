@@ -69,50 +69,60 @@ jobs:
         steps:
         - name: Checkout
           uses: actions/checkout@v2
-        - name: Download ChromeDriver
-          run: |
-              curl -L https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/win32/chromedriver-win32.zip -o chromedriver.zip
-        - name: Unzip ChromeDriver
-          run: |
-              unzip chromedriver.zip
+        # - name: Download ChromeDriver
+        #   run: |
+        #       curl -L https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/win32/chromedriver-win32.zip -o chromedriver.zip
+        # - name: Unzip ChromeDriver
+        #   run: |
+        #       unzip chromedriver.zip
         
         - name: Katalon Studio Github Action
           uses: katalon-studio/katalon-studio-github-action@v3.0
           with:
               version: '9.5.0'
               projectPath: ${{ github.workspace }}/test
-              args: ' -retry=0 -testSuitePath="Test Suites/mini" -apiKey="b882ef65-7d47-4f1e-b0ab-1cba4ba478f3" -browserType="Chrome" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -sendMail="20120263@student.hcmus.edu.vn" '
+              args: ' -retry=0 -testSuitePath="Test Suites/mini" -apiKey="b882ef65-7d47-4f1e-b0ab-1cba4ba478f3" -browserType="Firefox" -executionProfile="default" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true -sendMail="20120263@student.hcmus.edu.vn" '
   notify_slack:
        needs: test
        if: failure()
-
        runs-on: ubuntu-latest
        steps:
-       - name: Send Slack notification
-         uses: 8398a7/action-slack@v3
-         env:
-           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-         with:
-           status: custom
-           fields: repo,commit,event,action,workflow,ref,URL
-           custom_payload: |
-               {
-                 "attachments": [
-                   {
-                     "color": "${{ job.status }}",
-                     "title": 
-                       ${{ github.actor }} ${{ github.event.pull_request && github.event.pull_request.merged == true && 'merged a pull request' || github.event.pull_request && 'opened a pull request' || github.event_name == 'push' && 'pushed new changes' || github.event_name == 'create' && 'created a new branch or tag' || github.event_name == 'delete' && 'deleted a branch or tag' || github.event_name == 'issues' && github.event.action || 'triggered an event' }},
-                     "text": 
-                       :tada: Event details:
+         - name: Send Slack notification
+           uses: rtCamp/action-slack-notify@v2.1.2
+           env:
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+           with:
+            message: "GitHub Actions workflow has failed in job 'build'."
+            username: 'GitHub Actions'
+            icon_emoji: ':x:'
+
+       # runs-on: ubuntu-latest
+       # steps:
+       # - name: Send Slack notification
+       #   uses: 8398a7/action-slack@v3
+       #   env:
+       #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+       #   with:
+       #     status: custom
+       #     fields: repo,commit,event,action,workflow,ref,URL
+       #     custom_payload: |
+       #         {
+       #           "attachments": [
+       #             {
+       #               "color": "${{ job.status }}",
+       #               "title": 
+       #                 ${{ github.actor }} ${{ github.event.pull_request && github.event.pull_request.merged == true && 'merged a pull request' || github.event.pull_request && 'opened a pull request' || github.event_name == 'push' && 'pushed new changes' || github.event_name == 'create' && 'created a new branch or tag' || github.event_name == 'delete' && 'deleted a branch or tag' || github.event_name == 'issues' && github.event.action || 'triggered an event' }},
+       #               "text": 
+       #                 :tada: Event details:
                       
-                       - Repository: ${{ github.repository }}
-                       - Branch: ${{ github.ref }}
-                       - Message: ${{ github.event_name == 'push' && github.event.head_commit.message || github.event_name == 'issues' && github.event.issue.title || github.event_name == 'pull_request' && github.event.pull_request.title || '' }}
-                       - :globe_with_meridians: Link: ${{ github.event.pull_request.html_url || github.event.issue.html_url || github.event.repository.html_url }}
-                   }
+       #                 - Repository: ${{ github.repository }}
+       #                 - Branch: ${{ github.ref }}
+       #                 - Message: ${{ github.event_name == 'push' && github.event.head_commit.message || github.event_name == 'issues' && github.event.issue.title || github.event_name == 'pull_request' && github.event.pull_request.title || '' }}
+       #                 - :globe_with_meridians: Link: ${{ github.event.pull_request.html_url || github.event.issue.html_url || github.event.repository.html_url }}
+       #             }
                   
-                 ]
-               }
+       #           ]
+       #         }
 
         
     
