@@ -23,11 +23,15 @@ WebUI.navigateToUrl('https://pvhdang707.github.io/react-redux-realworld-example-
 
 WebUI.click(findTestObject('Object Repository/Page_Conduit/a_Sign in'))
 
+WebUI.waitForPageLoad(10)
+
 WebUI.setText(findTestObject('Object Repository/Page_Conduit/input_Need an account_form-control form-control-lg'), 'dang@example.com')
 
 WebUI.setText(findTestObject('Object Repository/Page_Conduit/input_Need an account_form-control form-control-lg'), 'dang')
 
 WebUI.click(findTestObject('Object Repository/Page_Conduit/button_Sign in'))
+
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Object Repository/Page_Conduit/a_abc Feed'))
 
