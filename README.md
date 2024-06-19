@@ -19,7 +19,7 @@ You can view a live demo over at https://react-redux.realworld.io/
 
 To get the frontend running locally:
 
-- Clone this repo
+- Clone this repos
 - `npm install` to install all req'd dependencies
 - `npm start` to start the local server (this project uses create-react-app)
 
