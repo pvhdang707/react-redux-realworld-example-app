@@ -87,14 +87,23 @@ jobs:
        if: failure()
        runs-on: ubuntu-latest
        steps:
-         - name: Send Slack notification
-           uses: rtCamp/action-slack-notify@v2.1.2
-           env:
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-           with:
-            message: "GitHub Actions workflow has failed in job 'build'."
-            username: 'GitHub Actions'
-            icon_emoji: ':x:'
+      
+     
+        - uses: actions/checkout@v2
+        - name: Slack Notification
+          uses: rtCamp/action-slack-notify@v2
+          env:
+            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+        - name: Slack Notification
+          uses: rtCamp/action-slack-notify@v2
+          env:
+            SLACK_CHANNEL: project
+            SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+            SLACK_ICON: https://github.com/rtCamp.png?size=48
+            SLACK_MESSAGE: 'Post Content :rocket:'
+            SLACK_TITLE: Post Title
+            SLACK_USERNAME: project github
+            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
 
        # runs-on: ubuntu-latest
        # steps:
